@@ -20,7 +20,7 @@ expose:
     auto:
       # The common name used to generate the certificate, it's necessary
       # when the type isn't "ingress"
-      commonName: "harbor1.kcp.io"
+      commonName: "harbor1.kscp.cn"
     secret:
       # The name of secret which contains keys named:
       # "tls.crt" - the certificate
@@ -103,7 +103,7 @@ expose:
 # the IP address of k8s node
 #
 # If Harbor is deployed behind the proxy, set it as the URL of proxy
-externalURL: https://core.harbor1.kcp.io
+externalURL: https://harbor1.kscp.cn:30013
 
 # The internal TLS used for harbor components secure communicating. In order to enable https
 # in each component tls cert files need to provided in advance.
